@@ -1,0 +1,90 @@
+1 Ushbu formani testlash strategiyasi
+
+Bu forma asosan to‘lov qilish uchun ishlatiladi, shuning uchun eng avvalo to‘lov to‘g‘ri va xavfsiz ishlayaptimi shuni tekshiraman.
+
+Birinchi navbatda funksional qismini ko‘raman. Telefon raqami to‘g‘ri formatda kiritilyaptimi, summa faqat raqam qabul qilyaptimi, valyuta tanlash ishlayaptimi, noto‘g‘ri maʼlumot bo‘lsa to‘lash tugmasi ishlamayaptimi.
+
+Keyin interfeys va til masalasini tekshiraman. Ilova bir nechta tilda bo‘lgani uchun matnlar to‘g‘ri chiqyaptimi, kesilib ketmayaptimi, valyuta formati to‘g‘rimi shular muhim.
+
+Xavfsizlik tomoni ham muhim. Juda katta yoki noto‘g‘ri summa bilan to‘lov ketib qolmasligi kerak. Tugmani tez tez bosganda ikki marta pul yechilib ketmasligi ham xavfli holat.
+
+Test va staging muhitlar kerak bo‘ladi. Test to‘lov servisi, Android va iOS qurilmalar yoki emulatorlar ham bo‘lishi kerak.
+
+Asosiy risklar deb noto‘g‘ri summa ko‘rsatilishi va foydalanuvchiga noto‘g‘ri status chiqishini hisoblayman.
+
+2 Ushbu forma uchun test turlari
+
+Birinchisi funksional testlash. Forma to‘g‘ri ishlayaptimi yoki yo‘qmi shuni tekshirish uchun.
+
+Ikkinchisi UI testlash. Dizayn maketga mos kelayaptimi va har xil qurilmalarda normal ko‘rinayaptimi.
+
+Uchinchisi lokalizatsiya testlash. Rus, o‘zbek va ingliz tillarida hamma matnlar to‘g‘ri chiqyaptimi.
+
+To‘rtinchisi regression testlash. O‘zgarishlardan keyin eski to‘lov logikasi buzilmaganini tekshirish uchun.
+
+3 Test turlari bo‘yicha ijobiy va salbiy testlar
+
+Funksional test
+Ijobiy
+To‘g‘ri telefon raqam va 50 000 UZS kiritamiz
+To‘lov muvaffaqiyatli o‘tishini kutamiz
+
+Salbiy
+Telefon raqamni to‘liq kiritmaymiz
+To‘lash tugmasi ishlamasligini kutamiz
+
+UI test
+Ijobiy
+Forma Android va iOS da ochiladi
+Elementlar joyida chiqishini kutamiz
+
+Salbiy
+Kichik ekranli qurilmada ochamiz
+Elementlar buzilib ketmasligini kutamiz
+
+Lokalizatsiya test
+Ijobiy
+Ilovani ingliz tiliga o‘tkazamiz
+Barcha matnlar inglizcha chiqishini kutamiz
+
+Salbiy
+Tilni almashtiramiz
+Aralash til chiqmasligini kutamiz
+
+Regression test
+Ijobiy
+O‘zgarishdan keyin to‘lov qilamiz
+Oldingi kabi ishlashini kutamiz
+
+Salbiy
+Oldin ishlagan joyni qayta tekshiramiz
+Xatolik chiqmasligini kutamiz
+
+4 To‘lov muvaffaqiyatli bo‘lishini tekshiruvchi test case
+
+Test nomi
+Mobil aloqa uchun to‘lov muvaffaqiyatli amalga oshirilishi
+
+Old shartlar
+Foydalanuvchi tizimga kirgan
+Internet mavjud
+
+Qadamlar
+Telefon raqam kiritiladi
+50 000 summa kiritiladi
+UZS tanlanadi
+To‘lash tugmasi bosiladi
+
+Kutilgan natija
+To‘lov muvaffaqiyatli o‘tadi
+Foydalanuvchiga muvaffaqiyatli xabar chiqadi
+
+Test jarayonidagi vaziyat
+
+Smoke testda 50 000 UZS kiritildi, lekin ekranda 55 000 UZS va bir vaqtning o‘zida successful va failed degan xabar chiqdi.
+
+Bu holat juda jiddiy. Foydalanuvchi pul yechildimi yoki yo‘qmi tushunmaydi. Bu moliyaviy risk.
+
+Shu sabab bug report ochaman. Bugni backend dasturchi Doniyorga biriktiraman, chunki summa va status backenddan keladi. Frontend dasturchini ham kommentga qo‘shaman, chunki xabar noto‘g‘ri ko‘rsatilgan bo‘lishi mumkin. Agar mantiq noto‘g‘ri bo‘lsa analitikni ham xabardor qilaman.
+
+Bugni high priority va high severity qilib belgilayman.

@@ -1,0 +1,50 @@
+1 Testlash nima va nima uchun kerak
+
+Testlash bu dastur to‘g‘ri ishlayaptimi yoki yo‘qmi shuni tekshirish jarayoni. Asosiy maqsad foydalanuvchi foydalanishidan oldin xatolarni topish. Agar test bo‘lmasa, foydalanuvchi xatolarni o‘zi topadi, bu esa yomon tajriba bo‘ladi. Testlash mahsulot sifatini oshirish uchun kerak.
+
+2 QA va QC o‘rtasidagi farq
+
+QA ko‘proq jarayonga qaraydi. Yaʼni qanday qilib xato chiqmasligi uchun ish qilish kerak degan savolga javob beradi. QC esa tayyor bo‘lgan mahsulotni tekshiradi. QA oldindan oldini oladi, QC esa xatoni topadi.
+
+3 Sifatli mahsulot nima
+
+Sifatli mahsulot bu foydalanuvchi kutganidek ishlaydigan mahsulot. Unda katta xatolar bo‘lmaydi, sekin ishlamaydi, tushunarsiz joylari kam bo‘ladi. Eng muhimi foydalanuvchi undan bemalol foydalana oladi.
+
+4 O‘zgarishlar bilan bog‘liq testlash
+
+Bu regression testlash deyiladi. Yangi funksiya qo‘shilganda yoki bug fix qilinganda eski ishlayotgan joylar buzilib ketmaganini tekshiramiz. Ko‘pincha eng ko‘p muammo shu joyda chiqadi.
+
+5 Minimal kerak bo‘ladigan test hujjatlar
+
+Birinchisi test plan. Unda qachon va qanday test qilinishi yoziladi.
+Ikkinchisi test case yoki test scenario. Qanday qadamlar bilan tekshirish yoziladi.
+Uchinchisi bug report. Topilgan xatolar shu yerga yoziladi.
+
+6 STLC jarayoni
+
+Avval talablarni o‘rganamiz. Keyin test plan qilinadi. So‘ng test case yoziladi. Test muhiti tayyorlanadi. Testlar bajariladi. Buglar yoziladi. Oxirida test yakunlanadi.
+Testlovchi ishni talablarni o‘qishdan boshlaydi va release chiqquncha davom ettiradi.
+
+7 QA qaysi bosqichlarda qatnashadi
+
+QA faqat oxirida emas, boshidan boshlab qatnashishi kerak. Talab yozilayotgan paytda ham, dizayn bosqichida ham, develop paytida ham. Shunda kamroq xato chiqadi.
+
+8 Test design va yondashuv
+
+Avval yangi funksiyani tushunib olaman. Qanday ishlashi kerakligini ko‘raman. Oddiy holatlarni yozaman, keyin noto‘g‘ri holatlarni ham qo‘shaman. Chekka holatlarni ham o‘ylab ko‘raman. Boshqa funksiyalarga taʼsiri bormi yo‘qmi shuni ham tekshiraman.
+
+9 Defekt ssenariylari
+
+Past kritik lekin yuqori prioritet. Masalan asosiy sahifada matn xato yozilgan. Ishlashga taʼsir qilmaydi lekin hamma ko‘radi.
+
+Yuqori kritik lekin past prioritet. Masalan kam ishlatiladigan admin sahifada tizim yiqilib ketadi. Xavfli lekin kam odam ishlatadi.
+
+10 Xato bug va hodisa farqi
+
+Xato bu odam qilgan noto‘g‘ri qaror.
+Bug bu koddagi muammo.
+Hodisa esa test paytida yoki prodakshnda ko‘rilgan nosozlik holati.
+
+11 Dasturchi bug muammo emas desa nima qilaman
+
+Avval tushuntirib beraman. Qanday holatda chiqayotganini ko‘rsataman. Talabga zid ekanini aytaman. Agar baribir rozi bo‘lmasa, lead yoki product ownerga ko‘rsataman. Bahslashmayman, fakt bilan gapiraman.
